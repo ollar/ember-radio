@@ -1,12 +1,7 @@
-<ul class="radio-messages" {{did-insert this.initRadio}}  ...attributes>
-    {{#each this.radio.messages as |message|}}
-        {{log message}}
-        {{yield (hash message=(component this.messageComponent
-                                            message=message
-                                            type=message.type
-                                            text=message.text
-                                            handleMouseIn=this.handleMouseIn
-                                            handleMouseOut=this.handleMouseOut
-                                            handleClick=this.handleClick))}}
-    {{/each}}
-</ul>
+<div class="radio-messages" {{did-insert this.initRadio}} ...attributes>
+    {{yield (hash Message=(component this.messageComponent
+                                handleMouseIn=this.handleMouseIn
+                                handleMouseOut=this.handleMouseOut
+                                handleClick=this.handleClick)
+                    messages=this.radio.messages)}}
+</div>

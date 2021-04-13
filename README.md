@@ -1,7 +1,7 @@
 ember-radio
 ==============================================================================
 
-[Short description of the addon.]
+Simple notification service for emberjs (no styling, no extra libs).
 
 
 Compatibility
@@ -23,8 +23,42 @@ ember install ember-radio
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+First of all add component to your template (application.hbs).
 
+```
+<RadioSpeaker @duration={{5000}} as |Radio|>
+
+...some markup...
+
+{{#each Radio.messages as |message|}}
+    <Radio.Message @message={{message}} />
+{{/each}}
+
+...some markup...
+
+</RadioSpeaker>
+```
+
+Radio - is an object with `<Message />` component and `messages` list array.
+
+You can push messages to the service with:
+
+```
+import { inject as service } from '@ember/service';
+
+export default class SomeComponent extends Component {
+    @service radio;
+
+    @action
+    someAction() {
+        this.radio.send({
+            type: 'info',
+            text: 'You are my hero!'
+        });
+    }
+    ...
+
+```
 
 Contributing
 ------------------------------------------------------------------------------

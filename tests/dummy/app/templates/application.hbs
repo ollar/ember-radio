@@ -1,22 +1,21 @@
 {{page-title "Radio demo"}}
 
-<RadioSpeaker @duration={{5000}} as |radio|>
-    <radio.message />
+<RadioSpeaker @duration={{5000}} as |Radio|>
+    {{#each Radio.messages as |message|}}
+        <Radio.Message @message={{message}} />
+    {{/each}}
 
+    {{outlet}}
 
+    <button type="button" {{on 'click' this.sendMessage}}>
+        info
+    </button>
 
+    <button type="button" {{on 'click' this.sendWarning}}>
+        warning
+    </button>
+
+    <button type="button" {{on 'click' this.sendError}}>
+        error
+    </button>
 </RadioSpeaker>
-
-{{outlet}}
-
-<button type="button" {{on 'click' this.sendMessage}}>
-    message
-</button>
-
-<button type="button" {{on 'click' this.sendWarning}}>
-    warning
-</button>
-
-<button type="button" {{on 'click' this.sendError}}>
-    error
-</button>

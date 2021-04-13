@@ -1,13 +1,13 @@
 {
   "name": "ember-radio",
-  "version": "1.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.1",
+  "description": "Simple notification service for emberjs.",
   "keywords": [
-    "ember-addon", "notification",
+    "ember-addon", "notifications"
   ],
-  "repository": "",
+  "repository": "github:ollar/ember-radio",
   "license": "MIT",
-  "author": "",
+  "author": "ollar",
   "directories": {
     "doc": "doc",
     "test": "tests"
