@@ -1,9 +1,10 @@
 {
   "name": "ember-radio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple notification service for emberjs.",
   "keywords": [
-    "ember-addon", "notifications"
+    "ember-addon",
+    "notifications"
   ],
   "repository": "github:ollar/ember-radio",
   "license": "MIT",
