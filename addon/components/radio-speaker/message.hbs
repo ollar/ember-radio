@@ -1,0 +1,13 @@
+<li
+    class="message {{@type}}"
+    {{on 'mouseenter' (fn @handleMouseIn @message)}}
+    {{on 'mouseleave' (fn @handleMouseOut @message)}}
+>
+    <span class="text">
+        {{@text}}
+    </span>
+    <a class="close" {{on 'click' (fn @handleClick @message)}}>
+        &times;
+    </a>
+    {{yield}}
+</li>

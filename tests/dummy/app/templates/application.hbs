@@ -1,5 +1,22 @@
-{{page-title "Dummy"}}
+{{page-title "Radio demo"}}
 
-<h2 id="title">Welcome to Ember</h2>
+<RadioSpeaker @duration={{5000}} as |radio|>
+    <radio.message />
+
+
+
+</RadioSpeaker>
 
 {{outlet}}
+
+<button type="button" {{on 'click' this.sendMessage}}>
+    message
+</button>
+
+<button type="button" {{on 'click' this.sendWarning}}>
+    warning
+</button>
+
+<button type="button" {{on 'click' this.sendError}}>
+    error
+</button>
