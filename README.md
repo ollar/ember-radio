@@ -1,27 +1,23 @@
-ember-radio
-==============================================================================
+# ember-radio
 
 Simple notification service for emberjs (no styling, no extra libs).
 
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
-* Ember.js v3.20 or above
-* Ember CLI v3.20 or above
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
 * Node.js v12 or above
 
 
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-radio
 ```
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 First of all add component to your template (application.hbs).
 
@@ -60,13 +56,11 @@ export default class SomeComponent extends Component {
 
 ```
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
