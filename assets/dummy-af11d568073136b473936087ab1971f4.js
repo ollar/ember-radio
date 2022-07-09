@@ -8,8 +8,7 @@ super(...arguments),e=this,t="radio",n=this,(r=o)&&Object.defineProperty(e,t,{en
 e.default=l})),define("dummy/helpers/ensure-safe-component",["exports","@embroider/util"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),Object.defineProperty(e,"default",{enumerable:!0,get:function(){return t.EnsureSafeComponentHelper}})})),define("dummy/helpers/page-title",["exports","ember-page-title/helpers/page-title"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 var r=t.default
 e.default=r})),define("dummy/initializers/container-debug-adapter",["exports","ember-resolver/resolvers/classic/container-debug-adapter"],(function(e,t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-var r={name:"container-debug-adapter",initialize(){let e=arguments[1]||arguments[0]
-e.register("container-debug-adapter:main",t.default),e.inject("container-debug-adapter:main","namespace","application:main")}}
+var r={name:"container-debug-adapter",initialize(){(arguments[1]||arguments[0]).register("container-debug-adapter:main",t.default)}}
 e.default=r})),define("dummy/initializers/export-application-global",["exports","ember","dummy/config/environment"],(function(e,t,r){function n(){var e=arguments[1]||arguments[0]
 if(!1!==r.default.exportApplicationGlobal){var n
 if("undefined"!=typeof window)n=window
