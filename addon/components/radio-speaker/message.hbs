@@ -1,14 +1,18 @@
 <div
-    class="message {{@message.type}}"
+    class="radio-messages__message {{@message.type}}"
     {{on 'mouseenter' (fn @handleMouseIn @message)}}
     {{on 'mouseleave' (fn @handleMouseOut @message)}}
+    data-test-message
      ...attributes
 >
-    <span class="text">
+    <span class="radio-messages__message-text" data-test-message-text>
         {{@message.text}}
     </span>
-    <a href="" class="close" {{on 'click' (fn @handleClick @message)}}>
-        &times;
-    </a>
+    <button
+        type="button"
+        class="radio-messages__message-close"
+        data-test-message-close
+        {{on 'click' (fn @handleClick @message)}}
+    >&times;</button>
     {{yield}}
 </div>

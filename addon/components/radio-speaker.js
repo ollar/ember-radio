@@ -3,8 +3,6 @@ import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
 
 export default class RadioSpeakerComponent extends Component {
-  messageComponent = 'radio-speaker/message';
-
   @service radio;
 
   @action
@@ -26,7 +24,8 @@ export default class RadioSpeakerComponent extends Component {
   }
 
   @action
-  handleClick(message) {
+  handleClick(message, e) {
+    e.preventDefault();
     this.radio.removeMessage(message);
   }
 }

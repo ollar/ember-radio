@@ -1,3 +1,5 @@
+[![CI](https://github.com/ollar/ember-radio/actions/workflows/ci.yml/badge.svg)](https://github.com/ollar/ember-radio/actions/workflows/ci.yml)
+
 # ember-radio
 
 Simple notification service for emberjs (no styling, no extra libs).

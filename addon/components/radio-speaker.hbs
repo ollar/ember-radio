@@ -1,5 +1,5 @@
 <div class="radio-messages" {{did-insert this.initRadio}} ...attributes>
-    {{yield (hash Message=(component this.messageComponent
+    {{yield (hash Message=(component 'radio-speaker/message'
                                 handleMouseIn=this.handleMouseIn
                                 handleMouseOut=this.handleMouseOut
                                 handleClick=this.handleClick)
